@@ -55,4 +55,4 @@ Automated tests for the project include some unit tests and integration tests wr
 ## Running the tests
 1. Open terminal and go to the project main folder.
 2. ```bash
-    npm test
+    npm run test
