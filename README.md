@@ -39,7 +39,7 @@ Automated tests for the project include some unit tests and integration tests wr
     - http://localhost:3000/auth/callback
 5. Enter "Settings" tab and copy the Client ID and the Secret.
 6. Paste the copied values to the .env file, replacing the current values.
-**Note: in a production code there would be no .env file in the repository. This is included for an easy testing as it is a dummy project.**
+**Note: in a production code there would be no .env file and no secret codes inside it in the repository. This is included for an easy testing for you as it is a dummy project.**
 
 ## Running the Application
 
