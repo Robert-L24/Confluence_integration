@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "axios": "^1.8.4",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/chai": "^5.2.0",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/express": "^5.0.1",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.13.10",
+    "@types/sinon": "^17.0.4",
+    "@types/supertest": "^6.0.2",
+    "chai": "4.3.4",
+    "cross-env": "^7.0.3",
+    "mocha": "^11.1.0",
+    "nock": "^14.0.1",
+    "sinon": "^19.0.4",
+    "supertest": "^7.1.0",
+    "ts-node": "^10.9.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "cross-env NODE_ENV=test mocha --require ts-node/register -r dotenv/config 'test/**/*.ts'"
+  },
+  "mocha": {
+    "spec": "test/**/*.ts",
+    "require": "ts-node/register"
+  }
+}
